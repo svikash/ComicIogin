@@ -1,9 +1,9 @@
 
 
     body {
-      animation: imagechange 60s; 
+      animation: imagechange 60s infinite; 
         
-      -webkit-animation: imagechange 60s; 
+      -webkit-animation: imagechange 60s infinite; 
     }
 
     @keyframes imagechange
@@ -115,12 +115,11 @@
 	font-size: 12px;
 }
 
-.box input[type="Register"]
+.box input[type="submit"]
 {
 	background:transparent;
 	border:none;
 	outline:none;
-	width:50px;
 	color:#fff;
 	background: #03a9f4;
 	padding: 10px 20px;
@@ -130,8 +129,20 @@
 }
 
 
-
+.box .comic-type label{
+	position: relative;
+	padding-right: 10px;
 }
-
+select {
+	background-color: transparent;
+	color: #fff;
+	border: 0;
+	font-size: 16px;
+	border-bottom: 1px solid #fff;
+}
+select:focus{
+	outline: none;
+	color: #03a9f4;
+}
 
  
